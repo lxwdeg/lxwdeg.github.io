@@ -66,6 +66,47 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-pyinstallerr-error" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/02/24/pyinstallerr-error/" class="article-date">
+  <time datetime="2020-02-24T05:19:41.000Z" itemprop="datePublished">2020-02-24</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/02/24/pyinstallerr-error/">pyinstallerr_error</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="pyinstaller报错urllib3-packages-six-moves-pre-safe-import-module-hook-failed-needs-fixing"><a href="#pyinstaller报错urllib3-packages-six-moves-pre-safe-import-module-hook-failed-needs-fixing" class="headerlink" title="pyinstaller报错urllib3.packages.six.moves pre-safe-import-module hook failed, needs fixing."></a><a href="https://www.cnblogs.com/pengfy/p/12108054.html" target="_blank" rel="noopener">pyinstaller报错urllib3.packages.six.moves pre-safe-import-module hook failed, needs fixing.</a></h1><p>在使用pyinstaller打包时，出现了以下错误：</p>
+<p>… …</p>
+<p>urllib3.packages.six.moves pre-safe-import-module hook failed, needs fixing.</p>
+<p>找了很久没有找到问题所在，突然想起来之前因为另一个问题，修改了python自带的subprocess.py文件里面的popen类的<strong>init</strong>，将里面的shell=False改成了shell=True,试着改回来，发现问题解决了。</p>
+<p>所以还是不要随便改动python自带的库，因为其他第三方库之间的依赖是复杂的关系。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/02/24/pyinstallerr-error/" data-id="ck700l4z700047cvkv0zxb015" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-test" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/02/10/test/" class="article-date">
@@ -92,7 +133,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/02/10/test/" data-id="ck6gny8sf000610vkgh5rht3d" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2020/02/10/test/" data-id="ck700l4z900067cvk5zbgi8uk" class="article-share-link">Share</a>
       
       
     </footer>
@@ -123,7 +164,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/11/02/ftp/" data-id="ck6gny8s3000010vkcypkvglf" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/11/02/ftp/" data-id="ck700l4z300027cvkxqn0qv6a" class="article-share-link">Share</a>
       
       
     </footer>
@@ -162,7 +203,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/10/09/hexo/" data-id="ck6gny8sg000710vkcclcgwxl" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/10/09/hexo/" data-id="ck700l4zq00077cvkf8dmcdz7" class="article-share-link">Share</a>
       
       
     </footer>
@@ -208,7 +249,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/09/28/renzehngfei/" data-id="ck6gny8se000510vkfwp2gkb3" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/09/28/renzehngfei/" data-id="ck700l4z800057cvka3pne0yh" class="article-share-link">Share</a>
       
       
     </footer>
@@ -245,7 +286,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/09/28/My-New-Post/" data-id="ck6gny8s9000210vkf8puj1v9" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/09/28/My-New-Post/" data-id="ck700l4yw00007cvkselqtsab" class="article-share-link">Share</a>
       
       
     </footer>
@@ -294,7 +335,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/09/28/hello-world/" data-id="ck6gny8sc000410vkkkxoupq7" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/09/28/hello-world/" data-id="ck700l4z500037cvkzgnw27uz" class="article-share-link">Share</a>
       
       
     </footer>
@@ -335,6 +376,10 @@
       <ul>
         
           <li>
+            <a href="/2020/02/24/pyinstallerr-error/">pyinstallerr_error</a>
+          </li>
+        
+          <li>
             <a href="/2020/02/10/test/">test</a>
           </li>
         
@@ -348,10 +393,6 @@
         
           <li>
             <a href="/2019/09/28/renzehngfei/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2019/09/28/My-New-Post/">My First Post</a>
           </li>
         
       </ul>
